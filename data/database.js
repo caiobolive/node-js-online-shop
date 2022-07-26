@@ -2,6 +2,8 @@ const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
 
+MONGODB_URL = 'mongodb+srv://caiobolive:<password>@cluster0.f5ja6kc.mongodb.net/?retryWrites=true&w=majority'
+
 let mongodbUrl = process.env.MONGODB_URL;
 
 if (mongodbUrl == null || port == "") {
