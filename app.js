@@ -20,7 +20,7 @@ const adminRoutes = require('./routes/admin.routes');
 const cartRoutes = require('./routes/cart.routes');
 const ordersRoutes = require('./routes/orders.routes');
 
-let PORT = 3000;
+let port = 3000;
 
 if (process.env.PORT) {
   port = process.env.PORT;
