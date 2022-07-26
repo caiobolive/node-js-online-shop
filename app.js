@@ -20,10 +20,10 @@ const adminRoutes = require('./routes/admin.routes');
 const cartRoutes = require('./routes/cart.routes');
 const ordersRoutes = require('./routes/orders.routes');
 
-let port = 3000;
+let port = process.env.PORT;
 
-if (process.env.PORT) {
-  port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
 }
 
 const app = express();
